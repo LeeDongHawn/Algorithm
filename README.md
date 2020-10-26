@@ -1,1 +1,4 @@
-# Algorithm 연습하기 with Python
+# Python 기본문법
+1.        
+2.    
+3.    
