@@ -17,5 +17,5 @@
 - 원하는 숫자 개수 만큼 한 줄에 숫자 입력받기(한 줄에 입력되는 수 만큼 자동 조정됨 x)    
 nums = [int(x) for x in input().split()]   
 Ex) 1 2 3 4 5인 경우 nums = [1,2,3,4,5] 저장됨   
-
+- print문 줄간격 제거 : print(a, end='')   
 ```
