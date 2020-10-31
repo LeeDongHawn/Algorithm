@@ -19,5 +19,5 @@ nums = [int(x) for x in input().split()]
 Ex) 1 2 3 4 5인 경우 nums = [1,2,3,4,5] 저장됨   
 - print문 줄간격 제거 : print(a, end='')   
 - 거듭제곱 : a의 b제곱 = a ** b    
-
+- 리스트 역방향 접근 : for i in num_list[::-1], 리스트 최대최소 : max,min(리스트)   
 ```
