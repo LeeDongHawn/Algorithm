@@ -37,7 +37,7 @@ for key in key_list :
 - 함수 : def 함수명(매개변수): (반복적인 코드 효율적 처리)
 - global 사용법   
 - 입력 속도 Up   
-1_ 1줄에 입력받기(int형 리스트) import sys   
+1) 1줄에 입력받기(int형 리스트) import sys   
 Data = map(int, sys.stdin.readline().split())   
 2) 1줄에 입력받기(문자열, 띄어쓰기 구분) import sys   
 Data = sys.stdin.readline().split()   
