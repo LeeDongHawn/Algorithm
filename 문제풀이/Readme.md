@@ -36,6 +36,16 @@ for key in key_list :
 원소 추가(여러개) : add(), updata([]), 원소 제거 : remove()  , 시간복잡도 : O(1)   
 - 함수 : def 함수명(매개변수): (반복적인 코드 효율적 처리)
 - global 사용법   
-
+- 입력 속도 Up   
+1_ 1줄에 입력받기(int형 리스트) import sys   
+Data = map(int, sys.stdin.readline().split())   
+2) 1줄에 입력받기(문자열, 띄어쓰기 구분) import sys   
+Data = sys.stdin.readline().split()   
+-> [‘a’, ‘c\n’]   
+Data = sys.stdin.readline().rstrip(‘\n’).split()   
+-> [‘a’,’c’]   
+3) K개의 줄에 입력 받은 값을 하나의 정수(문자열) 리스트로 만들기 import sys   
+Data = [int(sys.stdin.readline()) for i in range(n)]   
+ 
 
 ```
