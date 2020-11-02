@@ -24,5 +24,15 @@ Ex) 1 2 3 4 5인 경우 nums = [1,2,3,4,5] 저장됨
    
 ```
 2주차 요약   
--    
+- 여러 줄(N개) 입력을 리스트로 만들기 : Nums = [input() for _ in range(N)]
+- 문자열 + 연산   
+- 튜플 자료형 : () , 다익스트라 최단경로 구할 때 우선순위 큐에 들어가는 값은 튜플로 선언해야 한다.(변경되선 안됨)   
+- 사전 자료형 : data = dict(), data["사과"] = 'Apple' , 해시테이블(Hash Table), 검색 및 수정에 있어 O(1) 시간에 처리   
+ex) key_list = data.keys(), value_list = data.values() : 키 리스트, value 리스트 반환   
+for key in key_list :   
+   print(data[key])   
+- 집합 자료형 : {}, 중복을 허용하지 않으며, 순서가 없다. data=set([1,2,3])   
+교집합 : a&b(a와 b 모두 속한 값), 합집합 : a|b(a또는 b에 속해있는 값), 차집합 : a-b(a에만 속해있는 값)   
+원소 추가(여러개) : add(), updata([]), 원소 제거 : remove()  , 시간복잡도 : O(1)   
+
 ```
