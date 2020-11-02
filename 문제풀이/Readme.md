@@ -46,6 +46,9 @@ Data = sys.stdin.readline().rstrip(‘\n’).split()
 -> [‘a’,’c’]   
 3) K개의 줄에 입력 받은 값을 하나의 정수(문자열) 리스트로 만들기 import sys   
 Data = [int(sys.stdin.readline()) for i in range(n)]   
- 
+4) K개의 줄에 입력 받은 값 하나씩 리스트에 append
+num = int(sys.stdin.readline())   
+numbers.append(num)   
+
 
 ```
