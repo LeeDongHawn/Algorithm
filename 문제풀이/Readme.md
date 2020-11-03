@@ -50,6 +50,9 @@ Data = [int(sys.stdin.readline()) for i in range(n)]
 4) K개의 줄에 입력 받은 값 하나씩 리스트에 append
 num = int(sys.stdin.readline())   
 numbers.append(num)   
-
+- 입력 여러 줄 받은 문자열 배열 요소 접근 방법   
+names = [input().split() for _ in range(n)]
+names[0], names[0][0], names[0][0][0]   
+- 문자열.(upper(), lower(), isupper(), replace('바꿀문자','새문자'), zfill(개수), find('문자), count('문자')   
 
 ```
