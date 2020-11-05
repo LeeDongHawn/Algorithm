@@ -39,7 +39,7 @@ for key in key_list :
 - global 사용법   
 - 입력 속도 Up   
 1) 1줄에 입력받기(int형 리스트) import sys   
-Data = map(int, sys.stdin.readline().split())   
+Data = [int(x) for x in sys.stdin.readline().split()]      
 2) 1줄에 입력받기(문자열, 띄어쓰기 구분) import sys   
 Data = sys.stdin.readline().split()   
 -> [‘a’, ‘c\n’]   
@@ -47,9 +47,8 @@ Data = sys.stdin.readline().rstrip(‘\n’).split()
 -> [‘a’,’c’]   
 3) K개의 줄에 입력 받은 값을 하나의 정수(문자열) 리스트로 만들기 import sys   
 Data = [int(sys.stdin.readline()) for i in range(n)]   
-4) K개의 줄에 입력 받은 값 하나씩 리스트에 append
-num = int(sys.stdin.readline())   
-numbers.append(num)   
+4) a,b 같은 형태로 입력받는 경우 import sys    
+a,b = map(int, sys.stdin.readline().split())   
 - 입력 여러 줄 받은 문자열 배열 요소 접근 방법   
 names = [input().split() for _ in range(n)]
 names[0], names[0][0], names[0][0][0]   
