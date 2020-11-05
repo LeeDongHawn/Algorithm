@@ -54,4 +54,5 @@ names = [input().split() for _ in range(n)]
 names[0], names[0][0], names[0][0][0]   
 - 문자열.(upper(), lower(), isupper(), replace('바꿀문자','새문자'), zfill(개수), find('문자), count('문자')   
 - {:2d} : 2자리 숫자, 비어있으면 0채우기   
+- range(시작,끝,-1) : 1씩감소 시작부터   
 ```
