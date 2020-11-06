@@ -38,22 +38,23 @@ for key in key_list :
 - 함수 : def 함수명(매개변수): (반복적인 코드 효율적 처리)
 - global 사용법   
 - 입력 속도 Up   
-1) 1줄에 입력받기(int형 리스트) import sys   
+1) 1줄에 입력받기(int형 - 1차원 배열) import sys   
 Data = [int(x) for x in sys.stdin.readline().split()]      
-2) 1줄에 입력받기(문자열, 띄어쓰기 구분) import sys   
+2) 1줄에 입력받기(띄어쓰기 기준 - 문자열) (1차원 배열) import sys   
 Data = sys.stdin.readline().split()   
 -> [‘a’, ‘c\n’]   
 Data = sys.stdin.readline().rstrip(‘\n’).split()   
 -> [‘a’,’c’]   
-3) K개의 줄에 입력 받은 값을 하나의 정수(문자열) 리스트로 만들기 import sys   
-Data = [int(sys.stdin.readline()) for i in range(n)]   
-4) a,b 같은 형태로 입력받는 경우 import sys    
-a,b = map(int, sys.stdin.readline().split())   
-- 입력 여러 줄 받은 문자열 배열 요소 접근 방법   
-names = [input().split() for _ in range(n)]
-names[0], names[0][0], names[0][0][0]   
-- 문자열.(upper(), lower(), isupper(), replace('바꿀문자','새문자'), zfill(개수), find('문자), count('문자')   
+3) K개의 줄에 입력받기(int형- 2차원 배열) import sys    
+Data = [int(sys.stdin.readline()) for i in range(n)]      
+Data[0] -> 첫줄 입력(1차원 배열), Data[0][0] -> 첫줄 입력 처음 숫자 1개      
+4) K개의 줄에 입력받기(띄어쓰기 기준 - 문자열) (2차원 배열) import sys   
+names = [sys.stdin.readline().split() for _ in range(n)]      
+names[0], names[0][0] -> 첫줄 입력(1차원 배열), names[0][0][0] -> 첫줄 입력 처음 문자 1개      
+5) a,b 같은 형태로 입력받는 경우 import sys    
+a,b = map(int, sys.stdin.readline().split())     
+- 문자열.(upper(), lower(), isupper(), replace('바꿀문자','새문자'), zfill(개수), find('문자), count('문자')    
 - {:2d} : 2자리 숫자, 비어있으면 0채우기   
-- range(시작,끝,-1) : 1씩감소 시작부터    
+- range(시작,끝,-1) : 시작부터 1씩감소       
 - while 1 : index = name.find('target',index+1) ,, 특정 문자 index 모두 찾기   
-```
+```    
