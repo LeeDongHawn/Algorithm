@@ -31,7 +31,7 @@ Ex) 1 2 3 4 5인 경우 nums = [1,2,3,4,5] 저장됨
 ex) key_list = data.keys(), value_list = data.values() : 키 리스트, value 리스트 반환   
 for key in key_list :   
    print(data[key])   
-- 집합 자료형 : {}, 중복을 허용하지 않으며, 순서가 없다. data=set([1,2,3])   
+- 집합 자료형 : {}, list에 중복 제거할 때 사용, 순서가 없다. data=set([1,2,3,2])  => {1,3}      
 교집합 : a&b(a와 b 모두 속한 값), 합집합 : a|b(a또는 b에 속해있는 값), 차집합 : a-b(a에만 속해있는 값)   
 집합 연산 후 결과를 list() 형태로 형변환해야 index 접근 가능함!   
 원소 추가(여러개) : add(), updata([]), 원소 제거 : remove()  , 시간복잡도 : O(1)    
