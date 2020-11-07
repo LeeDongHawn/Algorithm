@@ -66,5 +66,9 @@ a,b = map(int, sys.stdin.readline().split())
 - {:2d} : 2자리 숫자, 비어있으면 0채우기   
 - range(시작,끝,-1) : 시작부터 1씩감소       
 - while 1 : index = name.find('target',index+1) ,, 특정 문자 index 모두 찾기   
-- 형변환(int to str) : str(), repr()  | 형변환(str to int) : int()   
+- 형변환(int to str) : str(), repr()  | 형변환(str to int) : int()    
+- 3개의 수 최소 공배수?? 방법1)
+day=1;   
+while(day%a!=0 or day%b!=0 or day%c!=0) :   day++;   
+
 ```    
