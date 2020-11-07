@@ -70,5 +70,6 @@ a,b = map(int, sys.stdin.readline().split())
 - 3개의 수 최소 공배수?? 방법1)
 day=1;   
 while(day%a!=0 or day%b!=0 or day%c!=0) :   day++;   
-
+- 2차원배열 초기화(nxn)   
+arr = [[0]*n for _ in range(n)]   
 ```    
