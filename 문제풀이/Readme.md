@@ -44,21 +44,18 @@ ex)  1 2 3 4 5 => [1,2,3,4,5]
 2) 1줄에 입력받기(띄어쓰기 기준 - 문자열) (1차원 배열) import sys   
 Data = sys.stdin.readline().split()   
 ex)  a b c d e => ['a','b','c','d','e']     
-3) 1줄에 입력받기(띄어쓰기 없는 경우 - 문자열) (1차원 배열) import sys
-Data = sys.stdin.readline()   
-Data = 'abcde', Data[0] -> 'a'   
-ex) abcde => ['abcde']   
-Data = sys.stdin.readline().rstrip(‘\n’).split()   
--> [‘a’,’c’]   
-3) K개의 줄에 입력받기(int형- 2차원 배열) import sys    
+3) 1줄에 입력받기(띄어쓰기 없는 경우 - 문자열) (2차원 배열) import sys
+Data = sys.stdin.readline().split()   
+Data[0] = 'abcde', Data[0][0] -> 'a'    
+4) K개의 줄에 입력받기(int형- 2차원 배열) import sys    
 Data = [int(sys.stdin.readline()) for i in range(n)]      
 Data[0] -> 첫줄 입력(1차원 배열), Data[0][0] -> 첫줄 입력 처음 숫자 1개    
 ex)  
-4) K개의 줄에 입력받기(띄어쓰기 기준 - 문자열) (3차원 배열) import sys   
+5) K개의 줄에 입력받기(띄어쓰기 기준 - 문자열) (3차원 배열) import sys   
 names = [sys.stdin.readline().split() for _ in range(n)]      
 names[0], names[0][0] -> 첫줄 입력(1차원 배열), names[0][0][0] -> 첫줄 입력 처음 문자 1개     
 ex) 
-5) a,b 같은 형태로 입력받는 경우 import sys    
+6) a,b 같은 형태로 입력받는 경우 import sys    
 a,b = map(int, sys.stdin.readline().split())     
 - 문자열.(upper(), lower(), isupper(), replace('바꿀문자','새문자'), zfill(개수), find('문자), count('문자')    
 - {:2d} : 2자리 숫자, 비어있으면 0채우기   
