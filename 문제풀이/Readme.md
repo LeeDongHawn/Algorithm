@@ -38,23 +38,25 @@ for key in key_list :
 - 함수 : def 함수명(매개변수): (반복적인 코드 효율적 처리)
 - global 사용법   
 - 입력 속도 Up   
-1) 1줄에 입력받기(int형 - 1차원 배열) import sys   
+1) 1줄에 입력받기(띄어쓰기 기준 - int형)(1차원 배열)import sys   
 Data = [int(x) for x in sys.stdin.readline().split()]     
 ex)  1 2 3 4 5 => [1,2,3,4,5]   
-2) 1줄에 입력받기(띄어쓰기 기준 - 문자열) (1차원 배열) import sys   
+2) 1줄에 입력받기(띄어쓰기 기준 - 문자열)(1차원 배열)import sys   
 Data = sys.stdin.readline().split()   
 ex)  a b c d e => ['a','b','c','d','e']     
-3) 1줄에 입력받기(띄어쓰기 없는 경우 - 문자열) (2차원 배열) import sys
+3) 1줄에 입력받기(띄어쓰기 없는 경우 - 문자열,숫자)(2차원 배열)import sys
 Data = sys.stdin.readline().split()   
 Data[0] = 'abcde', Data[0][0] -> 'a'    
-4) K개의 줄에 입력받기(int형- 2차원 배열) import sys    
+4) K개의 줄에 입력받기(띄어쓰기 없는 경우 - int형)(1차원 배열)import sys    
 Data = [int(sys.stdin.readline()) for i in range(n)]      
-Data[0] -> 첫줄 입력(1차원 배열), Data[0][0] -> 첫줄 입력 처음 숫자 1개    
-ex)  
-5) K개의 줄에 입력받기(띄어쓰기 기준 - 문자열) (3차원 배열) import sys   
+ex) 1: 123, 2: 333, 3: 12 -> [123,524,231]   
+5) K개의 줄에 입력받기(띄어쓰기 없는 경우 - 문자열)(1차원 배열)import sys    
+Data = [sys.stdin.readline() for i in range(n)]      
+ex) 1: abc, 2: z, 3: qw -> ['abc','z','qw']      
+5) K개의 줄에 입력받기(띄어쓰기 기준 - 문자열,숫자)(3차원 배열) import sys   
 names = [sys.stdin.readline().split() for _ in range(n)]      
 names[0], names[0][0] -> 첫줄 입력(1차원 배열), names[0][0][0] -> 첫줄 입력 처음 문자 1개     
-ex) 
+ex) 1 : 11 12, 2 : ab cd, 3 : abcd 123 -> [['11', '12'], ['ab', 'cd'], ['abcd', '123']]   
 6) a,b 같은 형태로 입력받는 경우 import sys    
 a,b = map(int, sys.stdin.readline().split())     
 - 문자열.(upper(), lower(), isupper(), replace('바꿀문자','새문자'), zfill(개수), find('문자), count('문자')    
