@@ -44,9 +44,9 @@ ex)  1 2 3 4 5 => [1,2,3,4,5]
 2) 1줄에 입력받기(띄어쓰기 기준 - 문자열) (1차원 배열) import sys   
 Data = sys.stdin.readline().split()   
 ex)  a b c d e => ['a','b','c','d','e']     
-3) 1줄에 입력받기(띄어쓰기 없는 경우 - 문자열) (2차원 배열) import sys
+3) 1줄에 입력받기(띄어쓰기 없는 경우 - 문자열) (1차원 배열) import sys
 Data = sys.stdin.readline()   
-Data[0] -> 'abcde', Data[0][0] -> 'a'   
+Data = 'abcde', Data[0] -> 'a'   
 ex) abcde => ['abcde']   
 Data = sys.stdin.readline().rstrip(‘\n’).split()   
 -> [‘a’,’c’]   
