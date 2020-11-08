@@ -85,4 +85,5 @@ list.append(숫자), list.insert(index, 숫자),
 lista+listb = 두 개 리스트 값 연결 = lista.extend(listb)   
 - 리스트 원소 삭제   
 del data[index], data.remove(숫자), del data[data.index(숫자)]   
-
+- 리스트 문자열 정수로 변환   
+data = ['1','2','3'] -> list(map(int, data)) -> data = [1,2,3]   
