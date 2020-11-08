@@ -73,3 +73,16 @@ while(day%a!=0 or day%b!=0 or day%c!=0) :   day++;
 - 2차원배열 초기화(nxn)   
 arr = [[0]*n for _ in range(n)]   
 ```    
+```   
+3주차요약   
+- 리스트 정렬(본체변형)     
+data.reverse() : 리스트를 거꾸로 뒤집는다.   
+data.sort() : 오름차순 정렬, reverse=True : 내림차순 정렬   
+- 리스트 정렬(본체변형하지 않음)    
+data2 = list(reversed(data)), data2 = sorted(data)   
+- 리스트 원소 추가  
+list.append(숫자), list.insert(index, 숫자),    
+lista+listb = 두 개 리스트 값 연결 = lista.extend(listb)   
+- 리스트 원소 삭제   
+del data[index], data.remove(숫자), del data[data.index(숫자)]   
+
