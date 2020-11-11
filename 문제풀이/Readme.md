@@ -88,7 +88,7 @@ arr = [[0]*n for _ in range(n)]
 data.reverse() : 리스트를 거꾸로 뒤집는다.   
 data.sort() : 오름차순 정렬, reverse=True : 내림차순 정렬   
 - 리스트 정렬(본체변형하지 않음)    
-data2 = list(reversed(data)), data2 = sorted(data)   
+data2 = list(reversed(data)), data2 = sorted(data)  
 - 리스트 원소 추가  
 list.append(숫자), list.insert(index, 숫자),    
 lista+listb = 두 개 리스트 값 연결 = lista.extend(listb)   
@@ -96,3 +96,6 @@ lista+listb = 두 개 리스트 값 연결 = lista.extend(listb)
 del data[index], data.remove(숫자), del data[data.index(숫자)]   
 - 리스트 문자열 정수로 변환   
 data = ['1','2','3'] -> list(map(int, data)) -> data = [1,2,3]   
+- 버림, 올림, 반올림        
+math.floor(숫자), math.ceil(숫자), 
+round(숫자)->앞자리 숫자가 짝수면 버림(.5) 홀수면 올림       
