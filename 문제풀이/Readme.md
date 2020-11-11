@@ -59,11 +59,12 @@ ex) 1: 123, 2: 333, 3: 12 -> [123,524,231]
 Data = [sys.stdin.readline() for i in range(n)]      
 ex) 1: abc, 2: z, 3: qw -> ['abc','z','qw']     
 7) K개의 줄에 입력받기(띄어쓰기 기준 - 숫자)(2차원 배열) import sys   
-names = [sys.stdin.readline().split() for _ in range(n)]      
-names[0], names[0][0] -> 첫줄 입력(1차원 배열), names[0][0][0] -> 첫줄 입력 처음 문자 1개     
-ex) 1 : 11 12, 2 : ab cd, 3 : abcd 123 -> [['11', '12'], ['ab', 'cd'], ['abcd', '123']]   
-8) K개의 줄에 입력받기(띄어쓰기 기준 - 문자열,숫자)(3차원 배열) import sys   
-names = [sys.stdin.readline().split() for _ in range(n)]      
+names = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]      
+names[0] -> 첫줄 입력(1차원 배열), names[0][0] -> 첫줄 입력 처음 숫자 1개
+int로 형변환하기 때문에 names[0][0][0]은 접근 불가능함   
+ex) 1 : 1 2, 2 : 2 3 -> [[1, 2], [2 ,3]]   
+8) K개의 줄에 입력받기(띄어쓰기 기준 - 문자열,숫자)(2차원 배열) import sys   
+names = [list(sys.stdin.readline().split()) for _ in range(n)]      
 names[0], names[0][0] -> 첫줄 입력(1차원 배열), names[0][0][0] -> 첫줄 입력 처음 문자 1개     
 ex) 1 : 11 12, 2 : ab cd, 3 : abcd 123 -> [['11', '12'], ['ab', 'cd'], ['abcd', '123']]   
 - 문자열.(upper(), lower(), isupper(), replace('바꿀문자','새문자'), zfill(개수), find('문자), count('문자')    
