@@ -40,7 +40,7 @@ for key in key_list :
 원소 추가(여러개) : add(), updata([]), 원소 제거 : remove()  , 시간복잡도 : O(1)    
 - 함수 : def 함수명(매개변수): (반복적인 코드 효율적 처리)
 - global 사용법   
-- 입력 속도 Up   
+[입력 속도 Up] import sys     
 1) 1줄에 입력받기(띄어쓰기 기준 - int형)(1차원 배열)import sys   
 Data = [int(x) for x in sys.stdin.readline().split()]     
 ex)  1 2 3 4 5 => [1,2,3,4,5]   
