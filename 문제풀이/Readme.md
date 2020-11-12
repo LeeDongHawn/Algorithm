@@ -96,6 +96,8 @@ lista+listb = 두 개 리스트 값 연결 = lista.extend(listb)
 del data[index], data.remove(숫자), del data[data.index(숫자)]   
 - 리스트 문자열 정수로 변환   
 data = ['1','2','3'] -> list(map(int, data)) -> data = [1,2,3]   
+- 리스트 숫자 index 찾기   
+data.index(숫자)   
 - 버림, 올림, 반올림        
 math.floor(숫자), math.ceil(숫자), 
 round(숫자)->앞자리 숫자가 짝수면 버림(.5) 홀수면 올림       
