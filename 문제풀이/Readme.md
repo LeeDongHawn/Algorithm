@@ -103,3 +103,4 @@ math.floor(숫자), math.ceil(숫자),
 round(숫자)->앞자리 숫자가 짝수면 버림(.5) 홀수면 올림       
 - 스택, 큐   
 - DFS(깊이 우선 탐색, Depth-Frist Search)    
+- 숫자돌리기(시작idx잡고, idx가 넘어가면 0으로 초기화해서 다시출력)   
