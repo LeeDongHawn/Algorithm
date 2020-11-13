@@ -101,3 +101,5 @@ data.index(숫자)
 - 버림, 올림, 반올림        
 math.floor(숫자), math.ceil(숫자), 
 round(숫자)->앞자리 숫자가 짝수면 버림(.5) 홀수면 올림       
+- 스택, 큐   
+- DFS(깊이 우선 탐색, Depth-Frist Search)    
